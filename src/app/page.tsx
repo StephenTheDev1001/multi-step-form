@@ -10,7 +10,7 @@ export default function Home() {
     name: '',
     email: '',
     phone: '',
-    plan: '',
+    plan: 'Arcade',
     online_services: false,
     larger_storage: false,
     customizable_profile: false,
