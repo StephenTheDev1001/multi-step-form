@@ -1,27 +1,18 @@
+import Step from './Step'
 
+interface ProgProps {
+  count: number;
+}
 
-const ProgressBar = () => {
+const ProgressBar = (props: ProgProps) => {
   return (
     <div className="progress-bar">
-      {/* list of numbers 1 - 4 */}
-        <ul>
-            
-            <li>
-                <h2>2</h2>
-                <p>STEP 2</p>
-                <p>SELECT PLAN</p>
-            </li>
-            <li>
-                <h2>3</h2>
-                <p>STEP 4</p>
-                <p>ADD-ONS</p>
-            </li>
-            <li>
-                <h2>4</h2>
-                <p>STEP 4</p>
-                <p>SUMMARY</p>
-            </li>
-        </ul>
+      <ul>
+        <Step step={1} desc="YOUR INFO" count={props.count} />
+        <Step step={2} desc="SELECT A PLAN" count={props.count} />
+        <Step step={3} desc="ADD-ONS" count={props.count} />
+        <Step step={4} desc="SUMMARY" count={props.count} />
+      </ul>
     </div>
   );
 };

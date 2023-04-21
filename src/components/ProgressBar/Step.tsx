@@ -1,13 +1,20 @@
-// needs step and desc as props
+interface StepProps {
+    step: number;
+    desc: string;
+    count: number;
+}
 
-const Step = (step : Number, desc : String) => {
+
+const Step = (props: StepProps) => {
     return (
         <div className="step">
-            <div className="step-number">{step.toString()}</div>
-            <div className="step-desc">{desc}</div>
+            <li>
+                <h2>{props.step.toString()}</h2>
+                <p>STEP {props.step.toString()}</p>
+                <p>{props.desc}</p>
+            </li>
         </div>
     )
 }
 
-
-
+export default Step;
