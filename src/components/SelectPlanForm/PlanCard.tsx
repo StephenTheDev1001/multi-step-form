@@ -1,4 +1,4 @@
-import { UserInfoTypes } from "../../CustomTypes";
+import { UserInfoTypes } from "../../utils/types";
 
 interface PlanCardProps {
   planSvg: String;
@@ -16,9 +16,7 @@ const PlanCard = (props: PlanCardProps) => {
   const { planSvg, title, monthlyPrice } = props;
 
   // onClick handler
-    const onClickHandler = () => {
-        
-    }
+  const onClickHandler = () => {};
 
   return (
     <div className="card w-96 bg-base-100 shadow-xl">

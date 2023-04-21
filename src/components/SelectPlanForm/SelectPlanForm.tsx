@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PlanCard from "./PlanCard";
-import { UserInfoTypes } from "../../CustomTypes";
+import { UserInfoTypes } from "../../utils/types";
 
 // imported images
 import arcadeSvg from "../../assets/images/icon-arcade.svg";

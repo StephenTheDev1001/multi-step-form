@@ -1,4 +1,3 @@
-// export an interface
 export interface UserInfoTypes {
     count: Number,
     name: String,
